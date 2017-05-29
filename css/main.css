@@ -3,6 +3,7 @@
   margin: 0;
   box-sizing: border-box;
 }
+/*styles portada*/
 .navbar-toggle{
   float: left!important;
 }
@@ -24,17 +25,6 @@
   margin-bottom: 0px!important;
 }
 /*style section hero*/
-#hero{
-  position: relative;
-  background: url(../assets/img/taxi.jpg);
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-position: center bottom;
-  /*width: 100%;*/
-  height: 90vh;
-  overflow: hidden;
-  color: #fff;
-}
 .divobien{
   border-bottom: 1px solid #fff;
   padding-bottom: 21px;
@@ -58,6 +48,21 @@
   margin-top: 14px;
   font-weight: bold!important;
 }
+.container-informacion {
+    margin-left: 0px !important;
+}
+#hero{
+  position: relative;
+  background: url(../assets/img/taxi.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center bottom;
+  /*width: 100%;*/
+  height: 90vh;
+  overflow: hidden;
+  color: #fff;
+}
+
 /*styles section informacion*/
 #informacion{
   position: relative;
@@ -75,15 +80,6 @@
   padding: 28px 0px;
 }
 /*styles about section conduce*/
-#conduce{
-  position: relative;
-  background: url(../assets/img/conduce.jpg);
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-position: center bottom;
-  height: 70vh;
-  color: #fff;
-}
 .conduce-content{
   position:absolute;
   width: 450px;
@@ -96,11 +92,30 @@
   align-items: center;
 }
 .btn-warning{
-  opacity: 100;
+  opacity: 100!important;
   background-color:  #f7b617!important;
   padding: 14px 35px!important;
 }
+#conduce{
+  position: relative;
+  background: url(../assets/img/conduce.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center bottom;
+  height: 70vh;
+  color: #fff;
+}
 /*styles about section tarifa*/
+.form-control {
+  display: inline-block!important;
+  width: auto!important;
+}
+input[type="text"]{
+    background-color: #f7b617;;
+}
+input[type="text"]::-webkit-input-placeholder{
+    color: #fff;
+}
 #tarifa{
   position: relative;
   width: 100%;
@@ -110,15 +125,18 @@
   align-items: center;
   color: #fff;
 }
-.form-control {
-  display: inline-block!important;
-  width: auto!important;
-}
 #map {
   height: 400px;
   width: 100%;
 }
 /*style about footer*/
+.row-footer{
+  border-top: 1px solid #fff;
+  border-bottom: 1px solid #fff;
+}
+.span-footer{
+  padding-top: 200px;
+}
 #footer{
   width: 100%;
   height: 70vh;
@@ -135,11 +153,6 @@
   width: 150px;
   margin: 7px;
 }
-.row-footer{
-  border-top: 1px solid #fff;
-  border-bottom: 1px solid #fff;
-}
-
 
 @media (max-width: 768px){
   .nav-collapse-list ul li{
@@ -160,16 +173,16 @@
     top: 20%;
     background-color: #f7b617;
   }
-  #informacion .rowImage{
-    border: 1px solid #fff;
-    padding: 28px 0px;
-    margin: 0!important;
-  }
   .conduce-content{
     width: 100%;
   }
   .conduce-content h1{
     font-size: 2.1em;
+  }
+  #informacion .rowImage{
+    border: 1px solid #fff;
+    padding: 28px 0px;
+    margin: 0!important;
   }
   #footer img{
     width: 100px;
